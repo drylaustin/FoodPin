@@ -22,6 +22,10 @@
 		0C9A380A2A63406500D2BA69 /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38092A63406500D2BA69 /* RestaurantDetailHeaderView.swift */; };
 		0C9A380C2A6350D200D2BA69 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A380B2A6350D200D2BA69 /* RestaurantDetailTextCell.swift */; };
 		0C9A380E2A6353AB00D2BA69 /* RestaurantDetailTwoColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A380D2A6353AB00D2BA69 /* RestaurantDetailTwoColumnCell.swift */; };
+		0C9A38112A649CA600D2BA69 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38102A649CA600D2BA69 /* UIColor+Ext.swift */; };
+		0C9A38132A64A22200D2BA69 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38122A64A22200D2BA69 /* NavigationController.swift */; };
+		0C9A38152A64B1C200D2BA69 /* RestaurantDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38142A64B1C200D2BA69 /* RestaurantDetailMapCell.swift */; };
+		0C9A38172A64D0BE00D2BA69 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38162A64D0BD00D2BA69 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		0C9A38092A63406500D2BA69 /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		0C9A380B2A6350D200D2BA69 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		0C9A380D2A6353AB00D2BA69 /* RestaurantDetailTwoColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTwoColumnCell.swift; sourceTree = "<group>"; };
+		0C9A38102A649CA600D2BA69 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		0C9A38122A64A22200D2BA69 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		0C9A38142A64B1C200D2BA69 /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
+		0C9A38162A64D0BD00D2BA69 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		0C8C9C202A5D25BC008F948F /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				0C9A380F2A649C8200D2BA69 /* Extensions */,
 				0C9A37FB2A60F51000D2BA69 /* Resources */,
 				0C9A37F82A5FF39E00D2BA69 /* Storyboard */,
 				0C9A37F32A5FE68F00D2BA69 /* Models */,
@@ -101,6 +110,8 @@
 			children = (
 				0C8C9C352A5D35ED008F948F /* RestaurantTableViewController.swift */,
 				0C9A37F92A60E43F00D2BA69 /* RestaurantDetailViewController.swift */,
+				0C9A38122A64A22200D2BA69 /* NavigationController.swift */,
+				0C9A38162A64D0BD00D2BA69 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 				0C9A38092A63406500D2BA69 /* RestaurantDetailHeaderView.swift */,
 				0C9A380B2A6350D200D2BA69 /* RestaurantDetailTextCell.swift */,
 				0C9A380D2A6353AB00D2BA69 /* RestaurantDetailTwoColumnCell.swift */,
+				0C9A38142A64B1C200D2BA69 /* RestaurantDetailMapCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +152,14 @@
 				0C9A38052A60F65D00D2BA69 /* Nunito-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0C9A380F2A649C8200D2BA69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A38102A649CA600D2BA69 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,15 +236,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9A37F22A5FDFEF00D2BA69 /* Restaurant.swift in Sources */,
+				0C9A38132A64A22200D2BA69 /* NavigationController.swift in Sources */,
 				0C9A37F02A5D41C500D2BA69 /* RestaurantTableViewCell.swift in Sources */,
 				0C9A37FA2A60E43F00D2BA69 /* RestaurantDetailViewController.swift in Sources */,
 				0C9A380C2A6350D200D2BA69 /* RestaurantDetailTextCell.swift in Sources */,
+				0C9A38112A649CA600D2BA69 /* UIColor+Ext.swift in Sources */,
 				0C9A380E2A6353AB00D2BA69 /* RestaurantDetailTwoColumnCell.swift in Sources */,
 				0C8C9C222A5D25BC008F948F /* AppDelegate.swift in Sources */,
+				0C9A38152A64B1C200D2BA69 /* RestaurantDetailMapCell.swift in Sources */,
 				0C8C9C242A5D25BC008F948F /* SceneDelegate.swift in Sources */,
 				0C9A37F72A5FE89C00D2BA69 /* RestaurantDiffableDataSource.swift in Sources */,
 				0C9A380A2A63406500D2BA69 /* RestaurantDetailHeaderView.swift in Sources */,
 				0C8C9C362A5D35ED008F948F /* RestaurantTableViewController.swift in Sources */,
+				0C9A38172A64D0BE00D2BA69 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +400,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +428,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

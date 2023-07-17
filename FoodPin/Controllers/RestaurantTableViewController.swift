@@ -36,79 +36,33 @@ class RestaurantTableViewController: UITableViewController {
     ]
     
     
-    // Indicate Table Sections
-    //    enum Section {
-    //        case all
-    //    }
-    
-    //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    //
-    //    {
-    //            // Create option menu as action sheet
-    //            let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
-    //
-    //            // Ipad alertcontroller fix
-    //            if let popoverController = optionMenu.popoverPresentationController {
-    //                if let cell = tableView.cellForRow(at: indexPath) {
-    //                    popoverController.sourceView = cell
-    //                    popoverController.sourceRect = cell.bounds
-    //                }
-    //            }
-    //
-    //            // Add actions to menu
-    //
-    //            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-    //            optionMenu.addAction(cancelAction)
-    //
-    //            // Add "Reserve a table" action
-    //
-    //            let reserveActionHandler = { (action:UIAlertAction!) -> Void in
-    //
-    //                let  alertMessage = UIAlertController(title: "Not Available", message: "Sorry this feature is not yet available", preferredStyle: .alert)
-    //
-    //                alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-    //                self.present(alertMessage, animated: true, completion: nil)
-    //
-    //            }
-    //
-    //            let reserveAction = UIAlertAction(title: "Reserve a table", style: .default, handler: reserveActionHandler)
-    //            optionMenu.addAction(reserveAction)
-    //
-    //            // Mark as "Favorite" Action
-    //
-    //
-    //
-    //            let favoriteActionTitle = self.restaurants[indexPath.row].isFavorite ? "Remove from favorites" : "Mark as favorite"
-    //
-    //            let favoriteAction = UIAlertAction(title: favoriteActionTitle, style: .default, handler: {
-    //                (action:UIAlertAction!) -> Void in
-    //
-    //
-    //                let cell = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
-    //
-    //                cell.favoriteImageView.isHidden = self.restaurants[indexPath.row].isFavorite
-    //
-    //                self.restaurants[indexPath.row].isFavorite = self.restaurants[indexPath.row].isFavorite ? false : true
-    //
-    //            })
-    //
-    //            optionMenu.addAction(favoriteAction)
-    //
-    //            // Display the menu
-    //            present(optionMenu, animated: true, completion: nil)
-    //
-    //            // Deselect the row
-    //            tableView.deselectRow(at: indexPath, animated: false)
-    //
-    //        }
+    let color = UIColor(named: "NavigationBarTitle")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // Navigation Bar
+        
+        navigationItem.backButtonTitle = ""
+        navigationController?.hidesBarsOnSwipe = true
+        
+        if let appearance = navigationController?.navigationBar.standardAppearance {
+            appearance.configureWithTransparentBackground()
+            if let customFont = UIFont(name: "Nunito-Bold", size: 45.0) {
+                appearance.titleTextAttributes = [.foregroundColor: UIColor(named: "NavigationBarTitle")!]
+                appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "NavigationBarTitle")!, .font: customFont]
+            }
+            
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.compactAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            
+        }
+        
         // Large Navigation title bar
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        
         
         // For Ipad
         tableView.cellLayoutMarginsFollowReadableWidth = true
@@ -128,6 +82,12 @@ class RestaurantTableViewController: UITableViewController {
         // Populate data
         dataSource.apply(snapshot, animatingDifferences: false)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = true
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     // Connect table and provide configurations of tableview cells
