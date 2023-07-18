@@ -26,6 +26,7 @@
 		0C9A38132A64A22200D2BA69 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38122A64A22200D2BA69 /* NavigationController.swift */; };
 		0C9A38152A64B1C200D2BA69 /* RestaurantDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38142A64B1C200D2BA69 /* RestaurantDetailMapCell.swift */; };
 		0C9A38172A64D0BE00D2BA69 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38162A64D0BD00D2BA69 /* MapViewController.swift */; };
+		0C9A38192A660D8100D2BA69 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A38182A660D8100D2BA69 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0C9A38122A64A22200D2BA69 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		0C9A38142A64B1C200D2BA69 /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
 		0C9A38162A64D0BD00D2BA69 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0C9A38182A660D8100D2BA69 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				0C9A37F92A60E43F00D2BA69 /* RestaurantDetailViewController.swift */,
 				0C9A38122A64A22200D2BA69 /* NavigationController.swift */,
 				0C9A38162A64D0BD00D2BA69 /* MapViewController.swift */,
+				0C9A38182A660D8100D2BA69 /* ReviewViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				0C9A37F22A5FDFEF00D2BA69 /* Restaurant.swift in Sources */,
 				0C9A38132A64A22200D2BA69 /* NavigationController.swift in Sources */,
+				0C9A38192A660D8100D2BA69 /* ReviewViewController.swift in Sources */,
 				0C9A37F02A5D41C500D2BA69 /* RestaurantTableViewCell.swift in Sources */,
 				0C9A37FA2A60E43F00D2BA69 /* RestaurantDetailViewController.swift in Sources */,
 				0C9A380C2A6350D200D2BA69 /* RestaurantDetailTextCell.swift in Sources */,

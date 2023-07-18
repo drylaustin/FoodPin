@@ -9,6 +9,8 @@ import UIKit
 
 class RestaurantDetailHeaderView: UIView {
     
+    
+    @IBOutlet var ratingImageView: UIImageView!
     @IBOutlet var headerImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel! {
         didSet {
